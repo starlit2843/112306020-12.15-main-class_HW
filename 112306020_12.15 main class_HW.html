@@ -1,0 +1,37 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> </title>
+</head>
+<body>
+	<script>
+		var n = window.prompt('Guess a number from 1 to 10');
+		
+		var rand = Math.floor(Math.random() * 10 + 1);
+		while (n != rand) {
+			n = window.prompt('False. Continue guessing:');
+		
+		}
+		if (n == rand) {
+			alert('You are right! The answer is '+ rand);
+		}
+		var n2 = window.prompt('Do you want to try again? input yes or no');
+		while(n2 =='yes') {
+			var n3 = window.prompt('Guess a number from 1 to 10');
+			var rand1 = Math.floor(Math.random() * 10 + 1);
+			while (n3 != rand1) {
+				n3 = window.prompt('False. Continue guessing:');
+		
+			}
+			if (n3 == rand1) {
+			alert('You are right! The answer is '+ rand1);
+			}
+			var n4 = window.prompt('Do you want to try again? input yes or no');
+			n2 = n4;
+		}	
+	</script>
+</body>
+</html>
+	
